@@ -20,6 +20,9 @@ const Wrapper = styled.div`
   float:right;
   margin-right:80px;
   position:relative;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 
@@ -38,7 +41,7 @@ const slideToRightAnimation = css`
   `;
 
 const TabPane = styled.span`
-  font-size:16px;
+  font-size:14px;
   color:${props => (props.active?themeColor:'#36384d')};
   margin:0 14px;
   cursor:pointer;
